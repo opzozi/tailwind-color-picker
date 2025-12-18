@@ -47,3 +47,4 @@ https://github.com/opzozi/tailwind-color-picker
 
 We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.
 
+
