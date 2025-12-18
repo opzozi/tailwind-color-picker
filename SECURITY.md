@@ -21,7 +21,7 @@ If you discover a security vulnerability, please **do not** open a public issue.
 
 ### Alternative: Email
 
-If you prefer to report via email, please contact: [Your email address]
+If you prefer to report via email, please contact: opzozi@gmail.com
 
 ## What to Include
 
