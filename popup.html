@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Tailwind Color Picker</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page page-popup">
+    <main class="app" aria-label="Tailwind color picker popup">
+      <header class="header">
+        <div class="brand">
+          <div class="logo" aria-hidden="true"></div>
+          <div class="title-wrap">
+            <h1 class="title">Tailwind Color Picker</h1>
+            <p class="subtitle">Offline • Private • MV3</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="panel" aria-label="Color actions">
+        <button id="pickBtn" class="btn btn-primary" type="button">
+          Pick Color
+        </button>
+
+        <div class="hint-row" aria-label="Keyboard shortcut">
+          <span class="hint-label">Hotkey</span>
+          <span class="hint-keys">
+            <kbd>Alt</kbd><span class="kbd-plus">+</span><kbd>C</kbd>
+          </span>
+        </div>
+
+        <div class="result" aria-live="polite">
+          <div class="swatch" id="swatch" aria-hidden="true"></div>
+
+          <div class="details">
+            <code id="twClass" class="tw-hero">—</code>
+            <div class="meta-row">
+              <code id="hexOut" class="mono-chip">—</code>
+              <span id="matchPct" class="badge" data-tone="warn">—</span>
+            </div>
+          </div>
+
+          <button
+            id="copyBtn"
+            class="icon-btn"
+            type="button"
+            disabled
+            aria-label="Copy Tailwind class"
+            title="Copy class"
+          >
+            <svg class="icon icon-copy" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M9 9a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2V9Z"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M5 15H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v1"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.8"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+            <svg class="icon icon-check" viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M20 6 9 17l-5-5"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2.2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+
+        <p id="status" class="status" role="status"></p>
+      </section>
+
+      <footer class="footer">
+        <a
+          class="support"
+          href="https://www.paypal.com/donate/?hosted_button_id=KSNA8YZWGMDFG"
+          target="_blank"
+          rel="noreferrer noopener"
+          title="Support development"
+        >
+          <svg class="support-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M6 8h11a0 0 0 0 1 0 0v6a5 5 0 0 1-5 5H9a3 3 0 0 1-3-3V8a0 0 0 0 1 0 0Z"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linejoin="round"
+            />
+            <path
+              d="M17 10h1a3 3 0 0 1 0 6h-1"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+            <path
+              d="M9 3v3M12 3v3M15 3v3"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.8"
+              stroke-linecap="round"
+            />
+          </svg>
+          <span>Support development</span>
+        </a>
+
+        <p class="fineprint">
+          No network. No analytics. All processing happens locally.
+        </p>
+      </footer>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script type="module" src="popup.js"></script>
+  </body>
+</html>
+
+
