@@ -112,7 +112,7 @@ If you find this extension useful, consider supporting its development:
 
 ## Changelog
 
-### 1.0.0 (2025-01-XX)
+### 1.0.0 (2025-12-18)
 
 - Initial release
 - EyeDropper color picking
