@@ -16,7 +16,7 @@ A lightweight Chrome extension that picks colors from any webpage and instantly 
 
 ### From Chrome Web Store
 
-1. Visit the [Chrome Web Store page](https://chrome.google.com/webstore) (coming soon)
+1. Visit the [Chrome Web Store page](https://chromewebstore.google.com/detail/tailwind-color-picker/iijbeejepebedocldehadgofaejcmbla?hl=hu&utm_source=ext_sidebar)
 2. Click "Add to Chrome"
 3. Confirm the installation
 
