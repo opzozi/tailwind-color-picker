@@ -1,6 +1,8 @@
 # Tailwind Color Picker
 
-A lightweight Chrome extension that picks colors from any webpage and instantly finds the closest matching Tailwind CSS class name. Fully offline, private, and built with Manifest V3.
+Chrome EyeDropper-based Tailwind CSS color picker extension. Pick any pixel, get the nearest Tailwind class name, work fully offline and private (MV3, no network, no analytics).
+
+**Keywords:** Tailwind color picker, EyeDropper, Chrome extension, offline Tailwind colors, Tailwind class name, DeltaE color match, Tailwind palette
 
 ## Features
 
@@ -111,6 +113,13 @@ If you find this extension useful, consider supporting its development:
 [Donate via PayPal](https://www.paypal.com/donate/?hosted_button_id=KSNA8YZWGMDFG)
 
 ## Changelog
+
+### 1.1.0 (2026-01-20)
+
+- Added RGB and HSL display with click-to-copy
+- Added recent history list (last 5 picks) shared between popup and picker window
+- Improved footer with version display, website and GitHub links
+- Various UI fine-tuning and minor fixes
 
 ### 1.0.0 (2025-12-18)
 
