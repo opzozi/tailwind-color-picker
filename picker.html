@@ -34,8 +34,18 @@
           <div class="details">
             <code id="twClass" class="tw-hero">—</code>
             <div class="meta-row">
-              <code id="hexOut" class="mono-chip">—</code>
+              <code id="hexOut" class="mono-chip" title="Copy HEX">—</code>
               <span id="matchPct" class="badge" data-tone="warn">—</span>
+            </div>
+            <div class="meta-row meta-row-compact">
+              <div class="meta-pair">
+                <span class="meta-label">RGB</span>
+                <code id="rgbOut" class="mono-chip chip-compact" title="Click to copy RGB">—</code>
+              </div>
+              <div class="meta-pair">
+                <span class="meta-label">HSL</span>
+                <code id="hslOut" class="mono-chip chip-compact" title="Click to copy HSL">—</code>
+              </div>
             </div>
           </div>
 
@@ -78,6 +88,18 @@
         </div>
 
         <p id="status" class="status" role="status"></p>
+
+        <div class="history">
+          <div class="history-head">
+            <span class="history-title">Recent picks</span>
+            <button id="clearHistory" class="btn-inline" type="button" aria-label="Clear history">
+              Clear
+            </button>
+          </div>
+          <div id="historyList" class="history-list">
+            <p class="history-empty">No history yet.</p>
+          </div>
+        </div>
       </section>
 
       <footer class="footer">
@@ -115,6 +137,30 @@
         </a>
 
         <p class="fineprint">No network. No analytics. All local.</p>
+
+        <div class="footer-meta">
+          <a
+            href="https://opzozidev.com"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="footer-link"
+            title="Visit opzozidev.com"
+          >
+            opzozidev.com
+          </a>
+          <span class="footer-sep">•</span>
+          <a
+            href="https://github.com/opzozi/tailwind-color-picker"
+            target="_blank"
+            rel="noreferrer noopener"
+            class="footer-link"
+            title="Open on GitHub"
+          >
+            GitHub
+          </a>
+          <span class="footer-sep">•</span>
+          <span class="footer-version" id="version">v1.0.0</span>
+        </div>
       </footer>
     </main>
 
